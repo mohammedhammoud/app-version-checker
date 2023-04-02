@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/mohammedhammoud/app-version-checker/compare/v1.0.2...v1.0.3) (2023-04-02)
+
+
+### Bug Fixes
+
+* remove country option as it is not necessary ([1bbadba](https://github.com/mohammedhammoud/app-version-checker/commit/1bbadbaddffacb2f3abd4211bf222ef8f13e04a5))
+
 ## [1.0.2](https://github.com/mohammedhammoud/app-version-checker/compare/v1.0.1...v1.0.2) (2023-04-02)
 
 
