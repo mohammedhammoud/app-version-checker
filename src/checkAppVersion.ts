@@ -7,7 +7,7 @@ export const supportedPlatforms = ['android', 'ios'] as const;
 
 export type Platform = (typeof supportedPlatforms)[number];
 
-enum AppStatus {
+export enum AppStatus {
   NOT_FOUND = 'not_found',
   OUT_DATED = 'out_dated',
   UP_TO_DATE = 'up_to_date',

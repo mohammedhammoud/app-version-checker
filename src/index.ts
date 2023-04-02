@@ -1,1 +1,1 @@
-export { checkAppVersion } from './checkAppVersion';
+export { checkAppVersion, AppStatus } from './checkAppVersion';
