@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/mohammedhammoud/app-version-checker/compare/v1.0.1...v1.0.2) (2023-04-02)
+
+
+### Bug Fixes
+
+* export AppStatus enum ([9d0ec05](https://github.com/mohammedhammoud/app-version-checker/commit/9d0ec05fea2d4d2be5faf179e4fc98353ddb1c29))
+* fix typo in ios store url ([01b27e1](https://github.com/mohammedhammoud/app-version-checker/commit/01b27e167bfdfa3e31f1958b7bcebbd7b1351d3e))
+
 ## [1.0.1](https://github.com/mohammedhammoud/app-version-checker/compare/v1.0.0...v1.0.1) (2023-04-02)
 
 
