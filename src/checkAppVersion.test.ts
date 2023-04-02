@@ -1,5 +1,5 @@
 import { checkAppVersion } from './checkAppVersion';
-import { getAppVersion, GetAppVersionFetchFn } from './getAppVersion';
+import { GetAppVersionFetchFn, getAppVersion } from './getAppVersion';
 import { getStoreUrl } from './getStoreUrl';
 
 jest.mock('./getAppVersion');
@@ -45,7 +45,7 @@ describe('checkAppVersion', () => {
     });
     expect(response.platform).toEqual('android');
     expect(response.status).toEqual('not_found');
-    expect(response.currentVersion).toEqual(null);
+    expect(response.latestVersion).toEqual(null);
     expect(response.storeUrl).toEqual(
       'https://play.google.com/store/apps/details?id=test-app-id'
     );
@@ -63,7 +63,7 @@ describe('checkAppVersion', () => {
       });
       expect(response.platform).toEqual('android');
       expect(response.status).toEqual('out_dated');
-      expect(response.currentVersion).toEqual('2.0.0');
+      expect(response.latestVersion).toEqual('2.0.0');
       expect(response.storeUrl).toEqual(
         'https://play.google.com/store/apps/details?id=test-app-id'
       );
@@ -82,7 +82,7 @@ describe('checkAppVersion', () => {
       });
       expect(response.platform).toEqual('ios');
       expect(response.status).toEqual('up_to_date');
-      expect(response.currentVersion).toEqual('1.2.0');
+      expect(response.latestVersion).toEqual('1.2.0');
       expect(response.storeUrl).toEqual(
         'https://itunes.apple.com/us/app/test-app-id'
       );

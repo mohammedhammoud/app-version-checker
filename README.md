@@ -26,20 +26,20 @@
 Here's an example of how you might use `checkAppVersion`:
 
 ```ts
-import { checkAppVersion } from "app-version-checker";
-import axios from "axios";
+import { checkAppVersion } from 'app-version-checker';
+import axios from 'axios';
 
 const fetchFn = async (url) => {
-  const { data } = await axios.get(url, { responseType: "text" });
+  const { data } = await axios.get(url, { responseType: 'text' });
   return data;
 };
 
 const result = await checkAppVersion({
-  appId: "id123456789",
-  country: "us",
+  appId: 'id123456789',
+  country: 'us',
   fetchFn,
-  currentVersion: "1.0.0",
-  platform: "ios",
+  currentVersion: '1.0.0',
+  platform: 'ios',
 });
 
 console.log(result);
@@ -47,7 +47,7 @@ console.log(result);
 // {
 //   platform: 'ios',
 //   status: 'up_to_date',
-//   currentVersion: '1.0.0',
+//   latestVersion: '1.0.0',
 //   storeUrl: 'https://itunes.apple.com/us/app/myapp/id123456789',
 // }
 ```

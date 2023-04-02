@@ -1,6 +1,6 @@
 import { compareVersions } from 'compare-versions';
 
-import { getAppVersion, GetAppVersionFetchFn } from './getAppVersion';
+import { GetAppVersionFetchFn, getAppVersion } from './getAppVersion';
 import { getStoreUrl } from './getStoreUrl';
 
 export const supportedPlatforms = ['android', 'ios'] as const;
@@ -14,7 +14,7 @@ enum AppStatus {
 }
 
 type AppVersionResponse = {
-  currentVersion: string | null;
+  latestVersion: string | null;
   platform: Platform;
   status: AppStatus;
   storeUrl: string;
@@ -52,7 +52,7 @@ export const checkAppVersion = async ({
   }
 
   return {
-    currentVersion: latestVersion,
+    latestVersion,
     platform,
     status,
     storeUrl,
