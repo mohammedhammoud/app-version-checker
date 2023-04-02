@@ -22,7 +22,6 @@ type AppVersionResponse = {
 
 type CheckVersionArgs = {
   appId: string;
-  country: string;
   currentVersion: string;
   fetchFn: GetAppVersionFetchFn;
   platform: Platform;
@@ -30,7 +29,6 @@ type CheckVersionArgs = {
 
 export const checkAppVersion = async ({
   appId,
-  country,
   currentVersion,
   fetchFn,
   platform,
@@ -40,7 +38,7 @@ export const checkAppVersion = async ({
   }
 
   const latestVersion = await getAppVersion[platform]({ appId, fetchFn });
-  const storeUrl = getStoreUrl[platform]({ appId, country });
+  const storeUrl = getStoreUrl[platform]({ appId });
 
   let status: AppStatus;
 

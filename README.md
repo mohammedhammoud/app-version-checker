@@ -13,7 +13,6 @@
 `platform` (string): The platform of the app (`"ios"` or `"android"`)
 `appId` (string): The app ID for the app you want to check
 `currentVersion` (string): The version number of the app you want to compare against
-`country` (string): The two-letter country code for the app's store listing
 `fetchFn` (function): A function that takes a URL as its argument and returns a Promise that resolves to the response text.
 
 `checkAppVersion` returns a Promise that resolves to an object with the following properties:
@@ -36,7 +35,6 @@ const fetchFn = async (url) => {
 
 const result = await checkAppVersion({
   appId: 'id123456789',
-  country: 'us',
   fetchFn,
   currentVersion: '1.0.0',
   platform: 'ios',

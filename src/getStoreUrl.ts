@@ -1,12 +1,11 @@
-type StoreUrlFn = (props: { appId: string; country: string }) => string;
+type StoreUrlFn = (props: { appId: string }) => string;
 
-const getIosStoreUrl: StoreUrlFn = ({ appId, country }) => {
-  return `https://apps.apple.com/${country}/app/${appId}`;
+const getIosStoreUrl: StoreUrlFn = ({ appId }) => {
+  return `https://apps.apple.com/app/${appId}`;
 };
 
-const getAndroidStoreUrl: StoreUrlFn = ({ appId, country }) => {
-  const gl = country.toUpperCase();
-  return `https://play.google.com/store/apps/details?id=${appId}&gl=${gl}`;
+const getAndroidStoreUrl: StoreUrlFn = ({ appId }) => {
+  return `https://play.google.com/store/apps/details?id=${appId}`;
 };
 
 export const getStoreUrl = {

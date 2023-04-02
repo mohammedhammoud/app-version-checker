@@ -7,7 +7,6 @@ jest.mock('./getStoreUrl');
 
 describe('checkAppVersion', () => {
   const appId = 'test-app-id';
-  const country = 'US';
 
   const fetchFn: GetAppVersionFetchFn = jest.fn();
 
@@ -25,7 +24,6 @@ describe('checkAppVersion', () => {
     await expect(
       checkAppVersion({
         appId,
-        country,
         currentVersion: '1.0.0',
         fetchFn,
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -38,7 +36,6 @@ describe('checkAppVersion', () => {
     (getAppVersion.android as jest.Mock).mockResolvedValue(null);
     const response = await checkAppVersion({
       appId,
-      country,
       currentVersion: '1.0.0',
       fetchFn,
       platform: 'android',
@@ -56,7 +53,6 @@ describe('checkAppVersion', () => {
       (getAppVersion.android as jest.Mock).mockResolvedValue('2.0.0');
       const response = await checkAppVersion({
         appId,
-        country,
         currentVersion: '1.9.0',
         fetchFn,
         platform: 'android',
@@ -75,7 +71,6 @@ describe('checkAppVersion', () => {
       (getAppVersion.ios as jest.Mock).mockResolvedValue('1.2.0');
       const response = await checkAppVersion({
         appId,
-        country,
         currentVersion: '1.2.0',
         fetchFn,
         platform: 'ios',
