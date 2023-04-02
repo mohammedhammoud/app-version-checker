@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/mohammedhammoud/app-version-checker/compare/v1.0.0...v1.0.1) (2023-04-02)
+
+
+### Bug Fixes
+
+* rename currentVersion in output to latestVersion ([321a1c4](https://github.com/mohammedhammoud/app-version-checker/commit/321a1c4c244bd5e8092f09bec0782e9e1e8e2939))
+
 # 1.0.0 (2023-04-02)
 
 
