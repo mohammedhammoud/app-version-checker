@@ -4,7 +4,7 @@ describe('getStoreUrl', () => {
   describe('ios', () => {
     test('returns the correct URL', () => {
       const result = getStoreUrl.ios({ appId: '123', country: 'us' });
-      expect(result).toBe('https://apps.apple.com/us/app/id123');
+      expect(result).toBe('https://apps.apple.com/us/app/123');
     });
   });
 
