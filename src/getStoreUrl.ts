@@ -1,7 +1,7 @@
 type StoreUrlFn = (props: { appId: string; country: string }) => string;
 
 const getIosStoreUrl: StoreUrlFn = ({ appId, country }) => {
-  return `https://apps.apple.com/${country}/app/id${appId}`;
+  return `https://apps.apple.com/${country}/app/${appId}`;
 };
 
 const getAndroidStoreUrl: StoreUrlFn = ({ appId, country }) => {
