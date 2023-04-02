@@ -1,0 +1,1 @@
+export { checkAppVersion } from './checkAppVersion';

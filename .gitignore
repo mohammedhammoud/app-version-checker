@@ -1,0 +1,6 @@
+dist
+node_modules
+.eslintcache
+.history
+.vscode
+yarn-error.log
