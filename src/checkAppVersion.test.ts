@@ -58,7 +58,7 @@ describe('checkAppVersion', () => {
         platform: 'android',
       });
       expect(response.platform).toEqual('android');
-      expect(response.status).toEqual('out_dated');
+      expect(response.status).toEqual('outdated');
       expect(response.latestVersion).toEqual('2.0.0');
       expect(response.storeUrl).toEqual(
         'https://play.google.com/store/apps/details?id=test-app-id'

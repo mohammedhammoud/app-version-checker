@@ -18,7 +18,7 @@
 `checkAppVersion` returns a Promise that resolves to an object with the following properties:
 
 `platform` (string): The platform of the app (`"ios"` or `"android"`)
-`status` (string): The status of the app (`"out_dated"`, `"up_to_date"`, or `"not_found"`)
+`status` (string): The status of the app (`"outdated"`, `"up_to_date"`, or `"not_found"`)
 `latestVersion` (string|null): The version number of the app on the store, or `null` if the app was not found
 `storeUrl` (string): The URL to the app's store listing
 

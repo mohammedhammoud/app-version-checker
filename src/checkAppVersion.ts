@@ -9,7 +9,7 @@ export type Platform = (typeof supportedPlatforms)[number];
 
 export enum AppStatus {
   NOT_FOUND = 'not_found',
-  OUT_DATED = 'out_dated',
+  OUTDATED = 'outdated',
   UP_TO_DATE = 'up_to_date',
 }
 
@@ -44,7 +44,7 @@ export const checkAppVersion = async ({
 
   if (latestVersion) {
     const isOutdated = compareVersions(latestVersion, currentVersion) === 1;
-    status = isOutdated ? AppStatus.OUT_DATED : AppStatus.UP_TO_DATE;
+    status = isOutdated ? AppStatus.OUTDATED : AppStatus.UP_TO_DATE;
   } else {
     status = AppStatus.NOT_FOUND;
   }
