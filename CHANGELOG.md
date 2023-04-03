@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/mohammedhammoud/app-version-checker/compare/v1.0.3...v1.0.4) (2023-04-03)
+
+
+### Bug Fixes
+
+* **typo:** rename out_dated to outdated ([75bdc23](https://github.com/mohammedhammoud/app-version-checker/commit/75bdc23d52e46913300e33db12244af954515d1c))
+
 ## [1.0.3](https://github.com/mohammedhammoud/app-version-checker/compare/v1.0.2...v1.0.3) (2023-04-02)
 
 
