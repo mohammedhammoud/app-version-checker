@@ -19,7 +19,7 @@
 
 `platform` (string): The platform of the app (`"ios"` or `"android"`)
 `status` (string): The status of the app (`"out_dated"`, `"up_to_date"`, or `"not_found"`)
-`currentVersion` (string|null): The version number of the app on the store, or `null` if the app was not found
+`latestVersion` (string|null): The version number of the app on the store, or `null` if the app was not found
 `storeUrl` (string): The URL to the app's store listing
 
 Here's an example of how you might use `checkAppVersion`:
